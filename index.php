@@ -35,13 +35,13 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
-        <img class="mb-4" src="corvuslogo.jpeg" alt="" width="72" height="72">
+    <form class="form-signin" method="POST" action="autentico.php">
+        <img class="mb-4" src="corvuslogo.jpeg" alt="" width="92" height="92">
         <h1 class="h3 mb-3 font-weight-normal">Ingreso al sistema</h1>
-        <label for="inputEmail" class="sr-only">Usuario</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
-        <label for="inputPassword" class="sr-only">Contrasela</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+        <label  class="sr-only">Usuario</label>
+        <input type="text" name="Usuario" class="form-control" placeholder="Usuario" required autofocus>
+        <label class="sr-only">Contrasela</label>
+        <input type="password" name="Clave" class="form-control" placeholder="Contraseña" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
         <p class="mt-5 mb-3 text-muted">&copy; 2020</p>
     </form>
